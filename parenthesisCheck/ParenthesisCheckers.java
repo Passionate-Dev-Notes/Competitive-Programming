@@ -74,7 +74,6 @@ package parenthesisCheck;
 	                    
 	                default:
 	                break;
-	                  
 	                           
 	            }
 	        }

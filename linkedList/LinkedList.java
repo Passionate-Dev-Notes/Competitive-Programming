@@ -55,6 +55,21 @@ class LinkedListOperation{
 		}
 
 	}
+	public void deleteAt(int index) {
+		if(index == 0) {
+			head = head.next;
+		}
+		else {
+			Node n = head;
+			Node n1 = null;
+			for(int i =0; i<index-1;i++) {
+				n = n.next;
+			}
+			n1 = n.next;
+			n.next = n1.next;
+			
+		}
+	}
 }
 
 public class LinkedList {
@@ -68,6 +83,7 @@ public class LinkedList {
 	   obj.insert(12);
 	   obj.insertAtStarting(5);
 	   obj.insertAtParticularIndex(1, 30);
+	   obj.deleteAt(2);
 	   obj.show();
 	}
 

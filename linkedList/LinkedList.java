@@ -37,6 +37,24 @@ class LinkedListOperation{
 		node.next = head;
 		head=node;
 	}
+	public void insertAtParticularIndex(int index, int data) {
+		Node node = new Node();
+		node.data = data;
+		node.next =null;
+		
+		Node n = head;
+		if(index == 0) {
+			insertAtStarting(data);
+		}
+		else {
+			for(int i =0; i<index;i++) {
+				n = n.next;
+			}
+			node.next = n.next;
+			n.next = node;
+		}
+
+	}
 }
 
 public class LinkedList {
@@ -49,6 +67,7 @@ public class LinkedList {
 	   obj.insert(21);
 	   obj.insert(12);
 	   obj.insertAtStarting(5);
+	   obj.insertAtParticularIndex(1, 30);
 	   obj.show();
 	}
 

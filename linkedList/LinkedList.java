@@ -29,6 +29,14 @@ class LinkedListOperation{
 		}
 		System.out.print(node.data);
 	}
+	
+	public void insertAtStarting(int data) {
+		Node node = new Node();
+		node.data = data;
+		//node.next=null;
+		node.next = head;
+		head=node;
+	}
 }
 
 public class LinkedList {
@@ -40,6 +48,7 @@ public class LinkedList {
 	   obj.insert(19);
 	   obj.insert(21);
 	   obj.insert(12);
+	   obj.insertAtStarting(5);
 	   obj.show();
 	}
 

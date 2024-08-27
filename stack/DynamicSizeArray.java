@@ -15,6 +15,14 @@ public class DynamicSizeArray {
 		stack.push(11);
 		stack.pop();
 		stack.pop();
+		stack.pop();
+		stack.pop();
+		stack.pop();
+		stack.pop();
+		stack.pop();
+		stack.pop();
+		stack.pop();
+		stack.pop();
 		stack.show();
 
 	}

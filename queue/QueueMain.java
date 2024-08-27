@@ -9,6 +9,8 @@ public class QueueMain {
 		queue.enQueue(7);
 		queue.enQueue(8);
 		queue.enQueue(9);
+		queue.deQueue();
+		
 		//queue.enQueue(10);
 		/*
 		 * queue.enQueue(10); queue.enQueue(5);

@@ -18,6 +18,24 @@ public class DStack {
 		stack = newStack;
 		capacity =capacity+2;
 	}
+	public int pop() {
+		int data = 0;
+		if(isEmpty()) {
+			System.out.println("No element present");
+		}
+		else {
+			
+			top--;
+			data = stack[top];
+			stack[top] =0;
+		}
+		return data;
+	}
+	
+	private boolean isEmpty() {
+		return top<=0;
+	}
+	
 	private int size() {
 		
 		return top;

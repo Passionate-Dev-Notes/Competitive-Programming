@@ -10,6 +10,10 @@ public class QueueWithCircularArrayMain {
 		cQueue.enQueue(32);
 		cQueue.enQueue(38);
 		cQueue.enQueue(58);
+		cQueue.deQueue();
+		cQueue.deQueue();
+		cQueue.deQueue();
+		cQueue.deQueue();
 		cQueue.show();
 	}
 

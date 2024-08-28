@@ -8,14 +8,36 @@ public class CircularQueue {
 	int rear;
 	
 	public void enQueue(int data) {
-		queue[rear] = data;
-		rear = (rear+1)%n;
-		size= size+1;
+		if(size() <= n) {
+			queue[rear] = data;
+			rear = (rear+1)%n;
+			size= size+1;
+		}
+		else {
+			System.out.println("Queue is full");
+		}
+		
+	}
+	public void deQueue() {
+		if(!isEmpty()) {
+			int data = queue[front];
+			front = (front +1)%n;
+			size--;
+		}
+		else {
+			System.out.println("Queue is empty");
+		}
+	}
+	public int size() {
+		return rear;
+	}
+	public boolean isEmpty() {
+		return rear<=0;
 	}
 	
 	public void show() {
 		for(int i = 0; i< queue.length; i++) {
-			System.out.print(queue[i]+" ");
+			System.out.print(queue[(front+i)%n]+" ");
 		}
 	}
 	

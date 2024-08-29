@@ -15,7 +15,7 @@ package parenthesisCheck;
 	        //Reading total number of testcases
 	        int t= sc.nextInt();
 	        
-	        while(t-- >0)
+	        //while(t-- >0)
 	        {
 	            //reading the string
 	            String st = sc.next();

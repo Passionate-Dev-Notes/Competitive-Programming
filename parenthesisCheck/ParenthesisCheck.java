@@ -12,10 +12,10 @@ public class ParenthesisCheck
       Scanner sc = new Scanner(System.in);
       
       //Reading total number of testcases
-      int t= sc.nextInt();
+     // int t= sc.nextInt();
       
-      while(t-- >0)
-      {
+      /*while(t-- >0)
+      {*/
           //reading the string
           String st = sc.next();
           
@@ -27,7 +27,7 @@ public class ParenthesisCheck
           else
               System.out.println("not balanced");
       
-      }
+      //}
   }
 }
 //} Driver Code Ends
